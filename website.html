@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Password Page</title>
+</head>
+<body>
+    <div id="secret-password" data-password="ABDBDAAS!))!@">This is a encode password page.</div>
+    <script>
+        // This script will run on the client side and can be used to retrieve the password
+        document.addEventListener('DOMContentLoaded', function() {
+            const passwordElement = document.getElementById('secret-password');
+            const password = passwordElement.getAttribute('data-password');
+            console.log('Secret Password:', password);
+        });
+    </script>
+</body>
+</html>
